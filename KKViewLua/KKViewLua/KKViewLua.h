@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import <KKViewLua/KKLuaScriptRunnable.h>
+
 //! Project version number for KKViewLua.
 FOUNDATION_EXPORT double KKViewLuaVersionNumber;
 
