@@ -14,6 +14,8 @@
 		ACCDE42E1DE959D200E6C255 /* KKElement+Lua.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCDE42C1DE959D200E6C255 /* KKElement+Lua.m */; };
 		ACEB49131E7125A80029CF9A /* KKLua.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB49111E7125A80029CF9A /* KKLua.framework */; };
 		ACEB49141E7125A80029CF9A /* KKView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB49121E7125A80029CF9A /* KKView.framework */; };
+		ACEB49251E7128980029CF9A /* KKLuaScriptRunnable.h in Headers */ = {isa = PBXBuildFile; fileRef = ACEB49231E7128980029CF9A /* KKLuaScriptRunnable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACEB49261E7128980029CF9A /* KKLuaScriptRunnable.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEB49241E7128980029CF9A /* KKLuaScriptRunnable.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		ACCDE42C1DE959D200E6C255 /* KKElement+Lua.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KKElement+Lua.m"; sourceTree = "<group>"; };
 		ACEB49111E7125A80029CF9A /* KKLua.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KKLua.framework; path = ../../../../../../Library/Frameworks/KKLua.framework; sourceTree = "<group>"; };
 		ACEB49121E7125A80029CF9A /* KKView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KKView.framework; path = ../../../../../../Library/Frameworks/KKView.framework; sourceTree = "<group>"; };
+		ACEB49231E7128980029CF9A /* KKLuaScriptRunnable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKLuaScriptRunnable.h; sourceTree = "<group>"; };
+		ACEB49241E7128980029CF9A /* KKLuaScriptRunnable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKLuaScriptRunnable.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 				ACCDE4261DE9581700E6C255 /* KKEventEmitter+Lua.m */,
 				ACCDE42B1DE959D200E6C255 /* KKElement+Lua.h */,
 				ACCDE42C1DE959D200E6C255 /* KKElement+Lua.m */,
+				ACEB49231E7128980029CF9A /* KKLuaScriptRunnable.h */,
+				ACEB49241E7128980029CF9A /* KKLuaScriptRunnable.m */,
 			);
 			path = KKViewLua;
 			sourceTree = "<group>";
@@ -90,6 +96,7 @@
 				ACCDE4061DE957A700E6C255 /* KKViewLua.h in Headers */,
 				ACCDE42D1DE959D200E6C255 /* KKElement+Lua.h in Headers */,
 				ACCDE4271DE9581700E6C255 /* KKEventEmitter+Lua.h in Headers */,
+				ACEB49251E7128980029CF9A /* KKLuaScriptRunnable.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACCDE4281DE9581700E6C255 /* KKEventEmitter+Lua.m in Sources */,
+				ACEB49261E7128980029CF9A /* KKLuaScriptRunnable.m in Sources */,
 				ACCDE42E1DE959D200E6C255 /* KKElement+Lua.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
