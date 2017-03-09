@@ -162,7 +162,7 @@
 				TargetAttributes = {
 					ACCDE4001DE957A700E6C255 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = BQQ2Y9B27K;
+						DevelopmentTeam = 8V7A9F9SCJ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -351,7 +351,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = BQQ2Y9B27K;
+				DEVELOPMENT_TEAM = 8V7A9F9SCJ;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -371,7 +371,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = BQQ2Y9B27K;
+				DEVELOPMENT_TEAM = 8V7A9F9SCJ;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -405,6 +405,7 @@
 				ACCDE40B1DE957A700E6C255 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
