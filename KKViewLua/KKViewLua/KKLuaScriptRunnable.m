@@ -40,7 +40,9 @@
                 
                 lua_pop(L, 1);
                 
-                return v;
+                NSLog(@"[KK] [KKView] [Lua] %@",v);
+                
+                return @"";
                 
             } else {
                 id v = lua_toValue(L, -1);
@@ -64,12 +66,14 @@
         
         struct lua_State * L = _luaState.L;
 
-        if(luaL_loadstring(L, [[NSString stringWithFormat:@"return function(object) %@ end",code] UTF8String]) != 0) {
+        if(luaL_loadstring(L, [[NSString stringWithFormat:@"return function(object) return %@ end",code] UTF8String]) != 0) {
             _errmsg = [NSString stringWithCString:lua_tostring(L, -1) encoding:NSUTF8StringEncoding] ;
             lua_pop(L, 1);
+            NSLog(@"[KK] [KKView] [Lua] %@",_errmsg);
         } else if(lua_pcall(L, 0, 1, 0) != 0) {
             _errmsg = [NSString stringWithCString:lua_tostring(L, -1) encoding:NSUTF8StringEncoding] ;
             lua_pop(L, 1);
+            NSLog(@"[KK] [KKView] [Lua] %@",_errmsg);
         } else {
             _ref = luaL_ref(L, LUA_REGISTRYINDEX);
         }
