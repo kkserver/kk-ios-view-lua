@@ -44,6 +44,24 @@
                 
                 return @"";
                 
+            } else if(lua_isfunction(L, -1)) {
+                
+                if(lua_pcall(L, 0, 1, 0) !=0) {
+                    
+                    NSString * v = [NSString stringWithCString:lua_tostring(L, -1) encoding:NSUTF8StringEncoding];
+                    
+                    lua_pop(L, 1);
+                    
+                    NSLog(@"[KK] [KKView] [Lua] %@",v);
+                    
+                    return @"";
+                    
+                } else {
+                    id v = lua_toValue(L, -1);
+                    lua_pop(L, 1);
+                    return v;
+                }
+                
             } else {
                 id v = lua_toValue(L, -1);
                 lua_pop(L, 1);
